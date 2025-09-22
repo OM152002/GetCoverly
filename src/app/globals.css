@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.pdf-sheet {
+  width: 794px;           
+  max-width: 794px;
+  padding: 40px;          
+  background: #ffffff;    
+  color: #111827;
+}
