@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📄 GetCoverly
 
-## Getting Started
+GetCoverly is a smart cover letter generator that helps job seekers quickly craft personalized, professional cover letters tailored to their resume and a target job description.
 
-First, run the development server:
+It integrates with OpenAI GPT-4o, Firebase Authentication, Firestore, and Firebase Storage to give users a secure, seamless experience:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Upload your resume (PDF)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Paste the job description
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Instantly generate a polished cover letter
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Save your letters to your profile and download as PDFs
 
-## Learn More
+✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+🔐 User Authentication – Sign up/login using Email & Password or Google
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📄 Resume Parsing – Upload a PDF resume, automatically extract text
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎯 Job-Specific Cover Letters – Generate tailored cover letters with GPT-4o
 
-## Deploy on Vercel
+📦 User Profile Integration – Save user details (name, address, email, phone) for reuse in cover letters
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📂 Letter Storage – Store generated letters in Firestore
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+☁️ PDF Export & Storage – Export letters to PDF and save to Firebase Storage
+
+📜 User Dashboard – View, download, or revisit all saved letters in one place
+
+🛠️ Tech Stack
+
+Frontend: Next.js 15
+, React, TailwindCSS
+
+Backend: Next.js API routes
+
+AI Model: OpenAI GPT-4o
+
+Database: Firebase Firestore
+
+Auth: Firebase Authentication (Email/Password & Google)
+
+Storage: Firebase Storage (PDFs)
+
+PDF Generation: jsPDF + html2canvas
