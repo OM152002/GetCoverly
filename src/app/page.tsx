@@ -108,12 +108,12 @@ export default function Home() {
   // Force A4-friendly width for the snapshot
   el.classList.add('pdf-sheet');
 
-  // High-res canvas to keep text crisp
+  
   const canvas = await html2canvas(el, {
-    scale: 2,             // increase DPI
+    scale: 2,             
     useCORS: true,
     backgroundColor: '#ffffff',
-    windowWidth: 794,     // hint: render layout with that width
+    windowWidth: 794,     
   });
 
   // Restore original styles
@@ -126,8 +126,8 @@ export default function Home() {
 
   // Create A4 PDF in points
   const pdf = new jsPDF('p', 'pt', 'a4');
-  const pageWidth = pdf.internal.pageSize.getWidth();   // 595.28 pt
-  const pageHeight = pdf.internal.pageSize.getHeight(); // 841.89 pt
+  const pageWidth = pdf.internal.pageSize.getWidth();   
+  const pageHeight = pdf.internal.pageSize.getHeight(); 
 
   // Start by fitting image to full page width
   let imgWidth = pageWidth;
@@ -152,7 +152,7 @@ export default function Home() {
     <main className="min-h-screen p-10 bg-gradient-to-br from-pink-500 to-red-500 text-white">
       <div className="max-w-4xl mx-auto space-y-6">
         <h1 className="text-4xl font-bold text-center mb-10">
-          📄 Coverly: Upload Resume + Job Description
+           Coverly: Upload Resume + Job Description
         </h1>
 
         <div>
