@@ -1,4 +1,4 @@
-# 📄 GetCoverly
+# 📄 GetCoverly - (On Going Project)
 
 GetCoverly is a smart cover letter generator that helps job seekers quickly craft personalized, professional cover letters tailored to their resume and a target job description.
 
